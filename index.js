@@ -11,7 +11,7 @@ function key(note, keyboardKey, keyObject){
   this.keyboardKey = keyboardKey;
   this.keyObject = keyObject;
   this.play = false;
-  this.audio = new Audio("piano-sounds/" + this.note + ".mp3");
+  //this.audio = new Audio("piano-sounds/" + this.note + ".mp3");
 
   //make functions for switching key on or off
 }
