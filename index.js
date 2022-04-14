@@ -39,10 +39,13 @@ function displayChord(){
 
 //takes in keyobject and determines if it is a black or white key
 function isBlack(keyObject){
-  if(keyObject.className.split(" ")[2] == "black"){
-    return true;
+  if(keyObject){
+    if(keyObject.className.split(" ")[2] == "black"){
+      return true;
+    }
+    return false;
   }
-  return false;
+
 }
 
 //plays a sound given the key
