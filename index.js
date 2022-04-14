@@ -11,7 +11,7 @@ function key(note, keyboardKey, keyObject){
   this.keyboardKey = keyboardKey;
   this.keyObject = keyObject;
   this.play = false;
-  //this.audio = new Audio("https://github.com/RicardoChairez/Chai-Keys/piano-sounds/" + this.note + ".mp3");
+  this.audio = new Audio("piano-sounds/" + key.note + ".mp3");
 
   //make functions for switching key on or off
 }
@@ -48,7 +48,6 @@ function isBlack(keyObject){
 //plays a sound given the key
 function playSound(key){
   var key_audio = new Audio("piano-sounds/" + key.note + ".mp3");
-  //var key_audio = new Audio("a1.mp3");
   key_audio.play();
 }
 
