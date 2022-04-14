@@ -48,7 +48,7 @@ function isBlack(keyObject){
 //plays a sound given the key
 function playSound(key){
   //var key_audio = new Audio("https://github.com/RicardoChairez/Chai-Keys/piano-sounds/" + key.note + ".mp3");
-  var key_audio = new Audio("https://github.com/RicardoChairez/Chai-Keys/eviction2_1.wav");
+  var key_audio = new Audio("a1.mp3");
   key_audio.play();
 }
 
