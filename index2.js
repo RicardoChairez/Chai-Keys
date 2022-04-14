@@ -74,18 +74,14 @@ for(var i=0; i < instrumentsLength; i++){
 
 for(var i=0; i < instrumentsLength; i++){
   document.querySelectorAll(".key")[i].addEventListener("mouseout", function(){
-    if(lastNote){
-      lastNote.play = false;
-      displayChord();
-      if(isBlack(lastNote)){
-        lastNote.style.backgroundColor = "black";
-      }
-      else{
-        lastNote.style.backgroundColor = "white";
-      }
+    lastNote.play = false;
+    displayChord();
+    if(isBlack(lastNote)){
+      lastNote.style.backgroundColor = "black";
     }
-
-
+    else{
+      lastNote.style.backgroundColor = "white";
+    }
   });
 }
 
